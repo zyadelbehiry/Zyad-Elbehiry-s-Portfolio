@@ -3,27 +3,16 @@ import { Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Frontend Developer",
-      company: "Freelance",
-      location: "Remote",
-      period: "2022 - Present",
+      title: "Web development and Programming Instructor",
+      company: "Discovery Academy for Science and Technology (AST)",
+      location: "Cairo, Egypt",
+      period: "Jun 2024 - Apr 2025",
       achievements: [
-        "Developed 15+ responsive web applications using React.js and Next.js",
-        "Improved client website performance by 40% through code optimization",
-        "Collaborated with 10+ clients to deliver custom solutions on time",
-        "Implemented modern UI/UX designs with 95% client satisfaction rate",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company: "Various Projects",
-      location: "Egypt",
-      period: "2021 - 2022",
-      achievements: [
-        "Built full-stack applications using MERN stack",
-        "Integrated third-party APIs and payment gateways",
-        "Optimized database queries reducing load times by 30%",
-        "Mentored junior developers on best practices",
+        "Delivered comprehensive instruction in HTML, CSS, JavaScript, Python, and Object-Oriented Programming (OOP) to students of varying skill levels.",
+        "Developed structured lesson plans and hands-on exercises to reinforce key programming concepts and best practices.",
+        "Provided personalized guidance and mentorship to help learners build strong foundational and problem-solving skills in web development.",
+        "Created engaging and interactive learning materials, including coding challenges and projects, to enhance student understanding and retention.",
+        "Utilized online platforms and tools to facilitate remote learning, ensuring accessibility and engagement for all students.",
       ],
     },
   ];

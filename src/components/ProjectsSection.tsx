@@ -7,11 +7,11 @@ const ProjectsSection = () => {
       description:
         "A modern e-commerce platform built with React.js featuring user authentication, shopping cart functionality, and payment integration.",
       technologies: [
-        "React.js",
-        "Node.js",
+        "Next.js",
+        "Mongoose",
         "MongoDB",
-        "Express.js",
-        "Stripe API",
+        "Tailwind CSS",
+        "Framer Motion",
       ],
       link: "https://github.com/zyadelbehiry/Quick-Cart-E-commerce",
       highlights: [
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
       title: "Bibliomania Library System",
       description:
         "A comprehensive library management system with book tracking, user management, and reporting features.",
-      technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap", "AJAX"],
+      technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
       link: "https://github.com/zyadelbehiry/Bibliomania-System",
       highlights: [
         "Developed complete CRUD operations for library management",

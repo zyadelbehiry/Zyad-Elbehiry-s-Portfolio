@@ -1,4 +1,4 @@
-import { GraduationCap } from "lucide-react";
+import { Calendar, GraduationCap, MapPin } from "lucide-react";
 
 const EduSection = () => {
   return (
@@ -21,11 +21,22 @@ const EduSection = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Computer Science & Engineering
+                  Computer Science Engineering
                 </h3>
-                <p className="text-lg text-blue-600 font-semibold mb-4">
-                  University Graduate
+                <p className="text-lg text-blue-600 font-semibold ">
+                  Faculty of Computer And Information Science (Ain Shams
+                  University)
                 </p>
+                <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-4">
+                    <span className="flex items-center gap-1">
+                      <MapPin size={16} />
+                      Cairo, Egypt
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Calendar size={16} />
+                      2020 - 2024
+                    </span>
+                  </div>
                 <p className="text-gray-700 leading-relaxed">
                   Strong foundation in software engineering principles, data
                   structures, algorithms, and computer systems. Specialized

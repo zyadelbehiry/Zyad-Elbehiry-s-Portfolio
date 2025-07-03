@@ -11,7 +11,6 @@ const SkillsSection = () => {
       "CSS3",
       "Tailwind CSS",
       "Bootstrap",
-      "Sass/SCSS",
       "Material-UI",
       "Redux",
       "Context API",
@@ -19,12 +18,9 @@ const SkillsSection = () => {
     "Backend & Database": [
       "Node.js",
       "Express.js",
-      "PHP",
       "MySQL",
       "MongoDB",
-      "PostgreSQL",
       "RESTful APIs",
-      "GraphQL",
       "JWT Authentication",
     ],
     "Development Tools": [
@@ -36,7 +32,6 @@ const SkillsSection = () => {
       "npm/yarn",
       "Webpack",
       "Vite",
-      "Docker",
     ],
     "Soft Skills": [
       "Problem Solving",

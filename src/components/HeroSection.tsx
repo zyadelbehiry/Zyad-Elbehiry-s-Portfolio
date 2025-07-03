@@ -7,6 +7,7 @@ import {
   Mail,
 } from "lucide-react";
 import personalImage from "../assets/profileWhiteCover.jpg";
+import CodeTypingAnimation from "./CodeTypingAnimation";
 const HeroSection = ({
   scrollToSection,
 }: {
@@ -15,7 +16,7 @@ const HeroSection = ({
   return (
     <section
       id="home"
-      className="pt-28 lg:pt-36 pb-48 px-6 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-800"
+      className="pt-28 md:pt-36 pb-48 px-6 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-800"
     >
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-10">
@@ -23,11 +24,7 @@ const HeroSection = ({
           <div className="flex justify-center lg:justify-start ">
             <div className="relative">
               <div className="w-60 h-60 md:w-80 md:h-80 border-4 border-slate-700 overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-8xl font-bold shadow-2xl">
-                <img
-                  // src="../assets/profileWhiteCover.jpg"
-                  src={personalImage}
-                  alt="Profile image"
-                />
+                <img src={personalImage} alt="Profile image" />
               </div>
               <div className="absolute -bottom-4 -right-4 w-16 h-16 md:w-24 md:h-24 bg-white rounded-full shadow-lg flex items-center justify-center">
                 <Code2 className="text-blue-600" size={32} />
@@ -47,10 +44,11 @@ const HeroSection = ({
                 & Software Engineer
               </span>
               <p className="text-xl md:text-2xl text-gray-300 max-w-2xl leading-relaxed">
-                Specialized in <span className="text-blue-400">React.js</span>,{" "}
+                {/* Specialized in <span className="text-blue-400">React.js</span>,{" "}
                 <span className="text-green-400">Next.js</span>,{" "}
                 <span className="text-purple-400">Node.js</span> and modern web
-                technologies, delivering scalable solutions.
+                technologies, delivering scalable solutions. */}
+                <CodeTypingAnimation />
               </p>
             </div>
 
