@@ -77,11 +77,11 @@ function App() {
 
       <HeroSection scrollToSection={scrollToSection} />
 
+      <ProjectsSection />
+
       <AboutSection />
 
       <ExperienceSection />
-
-      <ProjectsSection />
 
       <SkillsSection />
 

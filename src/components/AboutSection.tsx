@@ -17,7 +17,7 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Professional Summary
+                Summary
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Results-driven Frontend Developer with extensive experience in
