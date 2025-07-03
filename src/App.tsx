@@ -40,15 +40,20 @@ function App() {
             setActiveSection(section);
             break;
           }
+
           if (section === "home" && scrollPosition >= offsetTop) {
             setNavColor("light");
           }
           if (
             section === "home" &&
             scrollPosition <= offsetTop + offsetHeight + 100
+            ||section === "education" 
           ) {
             setNavColor("default");
           }
+          // if (section === "education") {
+          //   setNavColor("default");
+          // }
         }
       }
     };
