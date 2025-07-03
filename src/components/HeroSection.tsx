@@ -6,6 +6,7 @@ import {
   Linkedin,
   Mail,
 } from "lucide-react";
+import personalImage from "../assets/profileWhiteCover.jpg";
 const HeroSection = ({
   scrollToSection,
 }: {
@@ -23,9 +24,9 @@ const HeroSection = ({
             <div className="relative">
               <div className="w-60 h-60 md:w-80 md:h-80 border-4 border-slate-700 overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-8xl font-bold shadow-2xl">
                 <img
-                  src="/public/profileWhiteCover.jpg"
+                  // src="../assets/profileWhiteCover.jpg"
+                  src={personalImage}
                   alt="Profile image"
-                  
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-16 h-16 md:w-24 md:h-24 bg-white rounded-full shadow-lg flex items-center justify-center">
