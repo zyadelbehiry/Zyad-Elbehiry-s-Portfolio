@@ -7,12 +7,109 @@ const ContactSection = () => {
       className="py-20 px-6 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-800 text-white"
     >
       <div className="container mx-auto max-w-4xl text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Let's Work Together
-        </h2>
-        <p className="text-xl mb-12 opacity-90 max-w-2xl mx-auto">
-          Ready to bring your next project to life? I'd love to hear about your
-          ideas and discuss how we can collaborate to create something amazing.
+        <p className="text-xl mb-12 opacity-90 ">
+          <div className="max-w-4xl mx-auto p-6 md:p-8  rounded-2xl shadow-lg ">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Let's Connect and Collaborate
+              </h2>
+              <p className="text-lg max-w-2xl mx-auto">
+                I specialize in crafting high-performance web applications with
+                modern technologies like React, Node.js, and MongoDB.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className=" p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold mb-4">What I Offer</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <span className="text-2xl mr-3">🚀</span>
+                    <span>Fast delivery without compromising quality</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-2xl mr-3">💡</span>
+                    <span>Problem-solving focus for unique requirements</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-2xl mr-3">🔄</span>
+                    <span>Transparent communication throughout</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-2xl mr-3">🛠</span>
+                    <span>Maintainable code with documentation</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold  mb-4">
+                  Engagement Options
+                </h3>
+                <ul className="space-y-4 ">
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 mr-3 text-indigo-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Freelance projects
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 mr-3 text-indigo-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Contract work
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="w-5 h-5 mr-3 text-indigo-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                    Full-time opportunities
+                  </li>
+                </ul>
+                <div className="mt-6">
+                  <p className="text-sm ">
+                    Flexible engagement models tailored to your needs
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <p className="text-xl font-medium mb-6">
+                Let's turn your vision into reality.
+              </p>
+            </div>
+          </div>
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

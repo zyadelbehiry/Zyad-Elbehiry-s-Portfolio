@@ -38,7 +38,7 @@ const NavBar = ({
             }`}
           >
             <Database className="text-blue-400" size={22} />{" "}
-            <Code className="text-green-400" size={22}/> <p>Zyad Elbehiry</p>
+            <Code className="text-green-400" size={22} /> <p>Zyad Elbehiry</p>
           </div>
 
           {/* Desktop Navigation */}
@@ -66,7 +66,9 @@ const NavBar = ({
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-white hover:bg-gray-100 hover:text-slate-900 transition-colors"
+            className={`md:hidden p-2 rounded-lg ${
+              navColor === "default" ? "text-white" : "text-black"
+            }  hover:bg-gray-100 hover:text-slate-900 transition-colors`}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -82,8 +84,12 @@ const NavBar = ({
                   onClick={() => scrollToSection(item.id)}
                   className={`text-left py-2 px-4 rounded-lg transition-colors ${
                     activeSection === item.id
-                      ? "bg-blue-50 text-blue-600"
-                      : "text-gray-100 hover:bg-gray-50 hover:text-gray-600"
+                      ? "bg-blue-100 text-blue-600"
+                      : `${
+                          navColor === "default"
+                            ? "text-gray-100 hover:bg-gray-50"
+                            : "text-gray-700 hover:bg-gray-100"
+                        }  hover:text-gray-600`
                   }`}
                 >
                   {item.label}

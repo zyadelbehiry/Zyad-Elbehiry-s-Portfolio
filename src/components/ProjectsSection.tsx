@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
@@ -13,7 +13,8 @@ const ProjectsSection = () => {
         "Tailwind CSS",
         "Framer Motion",
       ],
-      link: "https://github.com/zyadelbehiry/Quick-Cart-E-commerce",
+      gitHubLink: "https://github.com/zyadelbehiry/Quick-Cart-E-commerce",
+      projectLink: "https://github.com/zyadelbehiry/Quick-Cart-E-commerce",
       highlights: [
         "Implemented secure user authentication and authorization",
         "Integrated Stripe payment gateway for seamless transactions",
@@ -27,7 +28,8 @@ const ProjectsSection = () => {
       description:
         "A responsive portfolio website showcasing modern design principles and smooth user experience.",
       technologies: ["React.js", "Tailwind CSS", "Next.js", "Vercel"],
-      link: "https://khaled-tantawy-s-portfolio.vercel.app/",
+      gitHubLink: "https://github.com/zyadelbehiry/Quick-Cart-E-commerce",
+      projectLink: "https://khaled-tantawy-s-portfolio.vercel.app/",
       highlights: [
         "Designed with modern UI/UX principles",
         "Implemented smooth animations and transitions",
@@ -41,7 +43,8 @@ const ProjectsSection = () => {
       description:
         "A comprehensive library management system with book tracking, user management, and reporting features.",
       technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
-      link: "https://github.com/zyadelbehiry/Bibliomania-System",
+
+      gitHubLink: "https://github.com/zyadelbehiry/Bibliomania-System",
       highlights: [
         "Developed complete CRUD operations for library management",
         "Implemented role-based access control",
@@ -49,6 +52,65 @@ const ProjectsSection = () => {
         "Reduced manual processes by 80%",
       ],
       category: "Full Stack",
+    },
+    {
+      title: "TaskFlow Manager",
+      description:
+        "A full-stack task management application with real-time updates, user authentication, and drag-and-drop functionality for intuitive task organization.",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "JWT Authentication",
+      ],
+      gitHubLink: "https://github.com/zyadelbehiry/Task-Management-App",
+      highlights: [
+        "Implemented secure JWT authentication for user sessions",
+        "Developed real-time task updates without page refresh",
+        "Created intuitive drag-and-drop interface for task organization",
+        "Built RESTful API with Express.js for CRUD operations",
+        "Designed responsive UI with Tailwind CSS for all devices",
+        "Optimized MongoDB queries for fast task retrieval",
+      ],
+      category: "Full Stack",
+    },
+    {
+      title: "WordMaster Game",
+      description: "An interactive word-guessing game built with HTML, CSS, JavaScript featuring real-time feedback, score tracking, and a dynamic word database for endless gameplay variations.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Local Storage",
+      ],
+      gitHubLink: "https://github.com/zyadelbehiry/Guess-The-Word-Game",
+      projectLink: "https://guess-the-word-game-sand.vercel.app/", // (update if different)
+      highlights: [
+        "Developed game logic with intelligent word validation",
+        "Implemented animated feedback for correct/incorrect guesses",
+        "Built score tracking with local storage persistence",
+        "Created responsive design with mobile-first approach",
+        "Designed intuitive keyboard input system"
+      ],
+      category: "Frontend"
+    },
+    {
+      title: "Tic-Tac-Toe",
+      description:
+        "A modern implementation of the classic game with enhanced features, built using Next.js and TypeScript for a seamless gaming experience.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      gitHubLink: "https://github.com/zyadelbehiry/Tic-Tac-Toe",
+      projectLink: "https://tic-tac-toe-ten-pi-38.vercel.app/",
+      highlights: [
+        "Implemented interactive game board with real-time state management",
+        "Added game history tracking with time-travel functionality",
+        "Developed responsive design that works across all devices",
+        "Enhanced UX with smooth animations and transitions",
+        "Built with modern development tools for optimal performance",
+      ],
+      category: "Frontend",
     },
   ];
   return (
@@ -74,14 +136,26 @@ const ProjectsSection = () => {
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full font-medium">
                     {project.category}
                   </span>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-blue-600 transition-colors"
-                  >
-                    <ExternalLink size={20} />
-                  </a>
+                  <div className="flex gap-2">
+                    {project.projectLink && (
+                      <a
+                        href={project.projectLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-blue-600 transition-colors"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
+                    <a
+                      href={project.gitHubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-blue-600 transition-colors"
+                    >
+                      <Github size={20} />
+                    </a>
+                  </div>
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
