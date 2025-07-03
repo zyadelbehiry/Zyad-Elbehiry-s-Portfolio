@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import CorrectionMark from "../UI/CorrectionMark";
 
 const ContactSection = () => {
   return (
@@ -8,31 +9,32 @@ const ContactSection = () => {
     >
       <div className="container mx-auto max-w-4xl text-center">
         <p className="text-xl mb-12 opacity-90 ">
-          <div className="max-w-4xl mx-auto p-6 md:p-8  rounded-2xl shadow-lg ">
+          <div className="max-w-4xl mx-auto p-6 md:p-8 rounded-2xl">
             <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Let's Connect and Collaborate
+                Let's <span className="text-green-500">Connect</span> and{" "}
+                <span className="text-blue-500">Collaborate</span>
               </h2>
-              <p className="text-lg max-w-2xl mx-auto">
+              <p className="text-lg max-w-2xl mx-auto text-gray-300">
                 I specialize in crafting high-performance web applications with
                 modern technologies like React, Node.js, and MongoDB.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className=" p-6 rounded-xl shadow-sm border border-gray-100">
+              <div className=" p-6 rounded-xl border border-gray-100">
                 <h3 className="text-xl font-semibold mb-4">What I Offer</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <span className="text-2xl mr-3">🚀</span>
+                    <span className="text-2xl mr-1">🚀</span>
                     <span>Fast delivery without compromising quality</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-2xl mr-3">💡</span>
+                    <span className="text-2xl mr-1">💡</span>
                     <span>Problem-solving focus for unique requirements</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-2xl mr-3">🔄</span>
+                    <span className="text-2xl mr-1">🔄</span>
                     <span>Transparent communication throughout</span>
                   </li>
                   <li className="flex items-start">
@@ -48,56 +50,20 @@ const ContactSection = () => {
                 </h3>
                 <ul className="space-y-4 ">
                   <li className="flex items-center">
-                    <svg
-                      className="w-5 h-5 mr-3 text-indigo-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
+                    <CorrectionMark />
                     Freelance projects
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      className="w-5 h-5 mr-3 text-indigo-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
+                    <CorrectionMark />
                     Contract work
                   </li>
                   <li className="flex items-center">
-                    <svg
-                      className="w-5 h-5 mr-3 text-indigo-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
+                    <CorrectionMark />
                     Full-time opportunities
                   </li>
                 </ul>
                 <div className="mt-6">
-                  <p className="text-sm ">
+                  <p className="text-sm text-gray-300">
                     Flexible engagement models tailored to your needs
                   </p>
                 </div>

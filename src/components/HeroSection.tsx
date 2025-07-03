@@ -44,10 +44,6 @@ const HeroSection = ({
                 & Software Engineer
               </span>
               <p className="text-xl md:text-2xl text-gray-300 max-w-2xl leading-relaxed">
-                {/* Specialized in <span className="text-blue-400">React.js</span>,{" "}
-                <span className="text-green-400">Next.js</span>,{" "}
-                <span className="text-purple-400">Node.js</span> and modern web
-                technologies, delivering scalable solutions. */}
                 <CodeTypingAnimation />
               </p>
             </div>
@@ -71,13 +67,22 @@ const HeroSection = ({
 
             {/* Quick Stats */}
             <div className="flex flex-wrap text-gray-200 gap-8 mt-12 justify-center lg:justify-start">
-              <a href="https://github.com/zyadelbehiry">
+              <a
+                href="https://github.com/zyadelbehiry"
+                className="hover:text-blue-500 transition-colors"
+              >
                 <Github />
               </a>
-              <a href="https://linkedin.com/in/zyad-elbehiry">
+              <a
+                href="https://linkedin.com/in/zyad-elbehiry"
+                className="hover:text-blue-500 transition-colors"
+              >
                 <Linkedin />
               </a>
-              <a href="zyadelbehiry@gmail.com">
+              <a
+                href="zyadelbehiry@gmail.com"
+                className="hover:text-blue-500 transition-colors"
+              >
                 <Mail />
               </a>
             </div>
