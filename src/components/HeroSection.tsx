@@ -23,7 +23,7 @@ const HeroSection = ({
             <div className="relative">
               <div className="w-60 h-60 md:w-80 md:h-80 border-4 border-slate-700 overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-8xl font-bold shadow-2xl">
                 <img
-                  src="/public/images/profileWhiteCover.jpg"
+                  src="/public/profileWhiteCover.jpg"
                   alt="Profile image"
                   
                 />
